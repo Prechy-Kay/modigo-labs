@@ -1,7 +1,8 @@
-def has_all_vowels(word):
-    required = {"a", "e", "i", "o", "u"}
-    word = word.lower()
-    # TODO: build a set of vowels actually found in `word`,
-    # then check if it contains all of `required`
-    return required <= set(word)
-print(has_all_vowels("education"))
+def count_unique_coordinates(coordinates):
+    unique = []
+    for coord in coordinates:
+        unique.append(coord)
+    return len(set(unique))
+
+
+print(count_unique_coordinates([(0,0), (1,1), (0,0)]))
