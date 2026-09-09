@@ -1,5 +1,10 @@
-def swap_tuple(pair):
-    return pair[1], pair[0]
-    # TODO: return a new tuple with pair's two elements swapped
+# No starter code provided — write the full function yourself.
+# Function name: create_book_record
+# Parameters: title, author, year
+# Must return: (title, author, year) as a tuple
 
-print(swap_tuple((5, 5)))
+def create_book_record(title, author, year):
+    return (title, author, year)
+
+
+print(create_book_record("Dune", "Frank Herbert", 1965))
