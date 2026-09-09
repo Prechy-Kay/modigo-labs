@@ -1,8 +1,4 @@
-def count_unique_coordinates(coordinates):
-    unique = []
-    for coord in coordinates:
-        unique.append(coord)
-    return len(set(unique))
-
-
-print(count_unique_coordinates([(0,0), (1,1), (0,0)]))
+def count_unique_visitors(visitors):
+    return len(set(visitors))
+    # TODO: convert `visitors` to a set to remove duplicates, then return its length
+print(count_unique_visitors([]))
