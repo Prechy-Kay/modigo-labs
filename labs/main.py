@@ -1,4 +1,5 @@
-def count_unique_visitors(visitors):
-    return len(set(visitors))
-    # TODO: convert `visitors` to a set to remove duplicates, then return its length
-print(count_unique_visitors([]))
+def unmatched_skus(warehouse_a, warehouse_b):
+    return warehouse_a ^ warehouse_b
+    # TODO: compute the symmetric difference using union/intersection/difference,
+    # without using ^ or .symmetric_difference()
+print(unmatched_skus({"A1"}, {"A1"}))
