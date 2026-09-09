@@ -1,7 +1,5 @@
-def same_point(point1, point2):
-    if point1 == point2:
-        return True
-    else: 
-        return False
-    # TODO: return True if point1 and point2 represent the same location
-    pass
+def swap_tuple(pair):
+    return pair[1], pair[0]
+    # TODO: return a new tuple with pair's two elements swapped
+
+print(swap_tuple((5, 5)))
