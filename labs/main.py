@@ -1,5 +1,7 @@
-def unmatched_skus(warehouse_a, warehouse_b):
-    return warehouse_a ^ warehouse_b
-    # TODO: compute the symmetric difference using union/intersection/difference,
-    # without using ^ or .symmetric_difference()
-print(unmatched_skus({"A1"}, {"A1"}))
+def apply_discount(price, discount_percent=10):
+    if not discount_percent:
+        discount_percent=0
+    return round(price - (price * discount_percent / 100), 2)
+
+
+apply_discount(100)
