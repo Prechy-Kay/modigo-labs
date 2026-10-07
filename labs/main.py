@@ -1,7 +1,12 @@
-def merge_tags(tags1, tags2):
-    return tags1 | tags2
+def find_common_elements(list1, list2):
+    result = []
+    for value in list1:
+        if value in list2 and value not in result:
+            result.append(value)
+    return result
+    # TODO: use for loops to find values present in both list1 and list2, with no duplicates
 
-
-merge_tags(set(), {"a", "b"})
-merge_tags({"x"}, set())
-merge_tags(set(), set())
+find_common_elements([1, 2, 3], [2, 3, 4])
+find_common_elements([1, 1, 2], [1, 3])
+find_common_elements([1, 2], [3, 4])
+find_common_elements([], [1, 2])
